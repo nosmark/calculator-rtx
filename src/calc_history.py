@@ -15,8 +15,9 @@ def history_add(first_num, operation, sec_num, result):
 def history_watch():
     if not os.path.exists("data"):
         os.makedirs("data")    
-    if not os.path.exists("data") or os.path.getsize("data/history.csv") == 0:
+    if os.path.getsize("data/history.csv") == 0:
         print("no history yet\n")
+        return
     with open("data/history.csv", "r", newline="") as csvfile:
         reader = csv.reader(csvfile)
         for r in reader:

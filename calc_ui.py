@@ -1,6 +1,6 @@
-import calc_logic
+from src import calc_logic
 import os
-import calc_history
+from src import calc_history
 GREEN = "\033[1;32m"
 
 def clean_screen():
