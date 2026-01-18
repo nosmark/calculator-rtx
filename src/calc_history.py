@@ -14,7 +14,10 @@ def history_add(first_num, operation, sec_num, result):
 
 def history_watch():
     if not os.path.exists("data"):
-        os.makedirs("data")    
+        os.makedirs("data") 
+    if not os.path.exists(FILE_PATH):
+        print("no history yet\n")
+        return   
     if os.path.getsize("data/history.csv") == 0:
         print("no history yet\n")
         return
@@ -23,7 +26,6 @@ def history_watch():
         for r in reader:
             if r:
                 print(f"{r[0]} {r[1]} {r[2]} = {r[3]}")
-
 
 
 def history_del():
