@@ -3,7 +3,6 @@ import math
 from tkinter import *
 from tkinter import ttk
 from src import calc_logic
-from src import calc_history
 
 
 class Calc_UI:
