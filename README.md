@@ -1,2 +1,2 @@
 # calculator-rtx
-Rtx 5090 calculator
+Simple calculator with Tkinter GUI
